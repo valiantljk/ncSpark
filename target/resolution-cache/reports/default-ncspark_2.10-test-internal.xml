@@ -7,7 +7,7 @@
 		revision="0.0.1"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160121155944"/>
+		date="20160121163636"/>
 	<dependencies>
 		<module organisation="org.scalanlp" name="breeze-viz_2.10">
 			<revision name="0.11.2" status="release" pubdate="20150326101600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="196">
@@ -2969,7 +2969,7 @@
 			</revision>
 		</module>
 		<module organisation="log4j" name="log4j">
-			<revision name="1.2.17" status="release" pubdate="20120526024339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master, default(compile)" position="30">
+			<revision name="1.2.17" status="release" pubdate="20120526024339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="30">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3514" time="0" location="/Users/jialin/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom"/>
 				<caller organisation="org.apache.spark" name="spark-core_2.10" conf="default, compile, runtime, master" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.6.0"/>
@@ -2987,7 +2987,9 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="1.2.14" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime, default(compile), master" position="-1">
+			<revision name="1.2.14" status="release" pubdate="20080831044502" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://logging.apache.org/log4j/docs/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2478" time="0" location="/Users/jialin/.ivy2/cache/log4j/log4j/ivy-1.2.14.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/log4j/log4j/1.2.14/log4j-1.2.14.pom"/>
 				<evicted-by rev="1.2.17"/>
 				<caller organisation="default" name="ncspark_2.10" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2.14" rev-constraint-default="1.2.14" rev-constraint-dynamic="1.2.14" callerrev="0.0.1"/>
 				<artifacts>

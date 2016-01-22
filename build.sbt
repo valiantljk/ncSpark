@@ -2,18 +2,18 @@ version := "0.0.1"
 scalaVersion := "2.10.4"
 resolvers += "Unidata maven repository" at "http://artifacts.unidata.ucar.edu/content/repositories/unidata-releases"
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "1.6.0" ,
-  "org.apache.spark" %% "spark-mllib" % "1.6.0",
-  "com.github.fommil.netlib" % "all" % "1.1.2",
-  "org.apache.hadoop" % "hadoop-client" % "2.6.0" , // depends on the version of Hadoop you're using! use hadoop version command to determine
-  "org.apache.commons" % "commons-compress" % "1.6",
+  "org.apache.spark" %% "spark-core" % "1.6.0"  % "provided",
+  "org.apache.spark" %% "spark-mllib" % "1.6.0"  % "provided",
+  "com.github.fommil.netlib" % "all" % "1.1.2"  % "provided",
+  "org.apache.hadoop" % "hadoop-client" % "2.6.0"  % "provided", // depends on the version of Hadoop you're using! use hadoop version command to determine
+  "org.apache.commons" % "commons-compress" % "1.6"  % "provided",
   "log4j" % "log4j" % "1.2.14",
-  "edu.ucar" % "cdm" % "4.5.5" exclude("commons-logging", "commons-logging"),
-  "edu.ucar" % "grib" % "4.5.5" exclude("commons-logging", "commons-logging"),
-  "edu.ucar" % "netcdf4" % "4.5.5" exclude("commons-logging", "commons-logging"),
-  "org.msgpack" %% "msgpack-scala" % "0.6.11",
-  "org.scalanlp" %% "breeze" % "0.10",
-  "org.scalanlp" %% "breeze-viz" % "0.11.2"
+  "edu.ucar" % "cdm" % "4.5.5" % "provided" exclude("commons-logging", "commons-logging"),
+  "edu.ucar" % "grib" % "4.5.5"  % "provided" exclude("commons-logging", "commons-logging"),
+  "edu.ucar" % "netcdf4" % "4.5.5" % "provided" exclude("commons-logging", "commons-logging"),
+  "org.msgpack" %% "msgpack-scala" % "0.6.11"  % "provided",
+  "org.scalanlp" %% "breeze" % "0.10"  % "provided",
+  "org.scalanlp" %% "breeze-viz" % "0.11.2"  % "provided"
 )
 mainClass in (Compile, run) := Some("org.apache.spark.mllib.linalg.distributed.netCDFTest")
 lazy val runTest = taskKey[Unit]("Test loading and saving of netcdf data")

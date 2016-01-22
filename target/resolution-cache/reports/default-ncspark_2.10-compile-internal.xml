@@ -7,7 +7,7 @@
 		revision="0.0.1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160121155944"/>
+		date="20160121163636"/>
 	<dependencies>
 		<module organisation="org.scalanlp" name="breeze-viz_2.10">
 			<revision name="0.11.2" status="release" pubdate="20150326101600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="196">
@@ -1100,10 +1100,9 @@
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="1.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="-1">
+			<revision name="1.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*)" position="-1">
 				<evicted-by rev="1.4"/>
 				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.1"/>
-				<caller organisation="org.apache.hadoop" name="hadoop-common" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="2.6.0"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -1290,10 +1289,13 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-yarn-server-nodemanager">
-			<revision name="2.6.0" status="release" pubdate="20141113144600" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="120">
+			<revision name="2.6.0" status="release" pubdate="20141113144600" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="120">
 				<metadata-artifact status="no" details="" size="38004" time="0" location="/Users/jialin/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.6.0/hadoop-yarn-server-nodemanager-2.6.0.pom"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="2.6.0"/>
 				<artifacts>
+					<artifact name="hadoop-yarn-server-nodemanager" type="jar" ext="jar" status="no" details="" size="638330" time="0" location="/Users/jialin/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/jars/hadoop-yarn-server-nodemanager-2.6.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.6.0/hadoop-yarn-server-nodemanager-2.6.0.jar"/>
+					</artifact>
 				</artifacts>
 			</revision>
 		</module>
@@ -2969,7 +2971,7 @@
 			</revision>
 		</module>
 		<module organisation="log4j" name="log4j">
-			<revision name="1.2.17" status="release" pubdate="20120526024339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master, default(compile)" position="30">
+			<revision name="1.2.17" status="release" pubdate="20120526024339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, compile(*), master, default(compile)" position="30">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3514" time="0" location="/Users/jialin/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom"/>
 				<caller organisation="org.apache.spark" name="spark-core_2.10" conf="default, compile, runtime, master" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.6.0"/>
@@ -2987,7 +2989,9 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="1.2.14" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime, default(compile), master" position="-1">
+			<revision name="1.2.14" status="release" pubdate="20080831044502" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://logging.apache.org/log4j/docs/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2478" time="0" location="/Users/jialin/.ivy2/cache/log4j/log4j/ivy-1.2.14.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/log4j/log4j/1.2.14/log4j-1.2.14.pom"/>
 				<evicted-by rev="1.2.17"/>
 				<caller organisation="default" name="ncspark_2.10" conf="compile-internal, compile, provided, optional" rev="1.2.14" rev-constraint-default="1.2.14" rev-constraint-dynamic="1.2.14" callerrev="0.0.1"/>
 				<artifacts>
