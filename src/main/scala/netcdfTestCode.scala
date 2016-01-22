@@ -29,14 +29,14 @@ import collection.mutable._
 object netCDFTest extends Logging {
 
   def main(args: Array[String]) = {
-    val conf = new SparkConf().setAppName("testNetCDF").setMaster("local[2]")
+    val conf = new SparkConf().setAppName("testNetCDF").setMaster("local[1]")
     val sc = new SparkContext(conf)
     sys.addShutdownHook( {sc.stop() } )
     appMain(sc, args)
   }
 
   def appMain(sc: SparkContext, args: Array[String]) = {
-    val inpath = "/Users/jialin/Documents/sparkhdf5/test-scala-netcdf/src/main/resources/merg_2006091100_4km-pixel.nc"
+    val inpath = "/Users/jialin/Documents/sparkhdf5/ncSpark/src/main/resources/merg_2006091100_4km-pixel.nc"
     val outpath  = "output.nc"
     val outpath1 = "output1.nc"
     // Load using NetCDF binding
