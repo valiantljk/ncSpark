@@ -4,7 +4,7 @@
 		module="ncspark_2.10"
 		revision="0.0.1"
 		status="integration"
-		publication="20160121163636"
+		publication="20160121164143"
 	>
 		<description>
 		ncspark
@@ -46,7 +46,7 @@
 		<dependency org="edu.ucar" name="grib" rev="4.5.5" conf="provided->default(compile)">
 			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
-		<dependency org="edu.ucar" name="netcdf4" rev="4.5.5" conf="provided->default(compile)">
+		<dependency org="edu.ucar" name="netcdf4" rev="4.5.5" conf="compile->default(compile)">
 			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="org.msgpack" name="msgpack-scala_2.10" rev="0.6.11" conf="provided->default(compile)"/>

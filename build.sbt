@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "log4j" % "log4j" % "1.2.14",
   "edu.ucar" % "cdm" % "4.5.5" % "provided" exclude("commons-logging", "commons-logging"),
   "edu.ucar" % "grib" % "4.5.5"  % "provided" exclude("commons-logging", "commons-logging"),
-  "edu.ucar" % "netcdf4" % "4.5.5" % "provided" exclude("commons-logging", "commons-logging"),
+  "edu.ucar" % "netcdf4" % "4.5.5" exclude("commons-logging", "commons-logging"),
   "org.msgpack" %% "msgpack-scala" % "0.6.11"  % "provided",
   "org.scalanlp" %% "breeze" % "0.10"  % "provided",
   "org.scalanlp" %% "breeze-viz" % "0.11.2"  % "provided"

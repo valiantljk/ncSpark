@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@356e3669[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59ca0dad[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -22,6 +22,44 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving edu.ucar#netcdf4;4.5.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: edu.ucar#netcdf4;4.5.5 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: edu.ucar#netcdf4;4.5.5[0m
+[0m[[0mdebug[0m] [0m	found edu.ucar#netcdf4;4.5.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving net.jcip#jcip-annotations;1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.jcip#jcip-annotations;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.jcip#jcip-annotations;1.0[0m
+[0m[[0mdebug[0m] [0m	found net.jcip#jcip-annotations;1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving net.java.dev.jna#jna;4.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java.dev.jna#jna;4.1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java.dev.jna#jna;4.1.0[0m
+[0m[[0mdebug[0m] [0m	found net.java.dev.jna#jna;4.1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.slf4j#slf4j-api;1.7.7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.7[0m
+[0m[[0mdebug[0m] [0m	found org.slf4j#slf4j-api;1.7.7 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [compile][0m
@@ -33,6 +71,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [runtime][0m
@@ -45,6 +99,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.apache.spark#spark-core_2.10;1.6.0 [provided->default(compile)][0m
@@ -4499,13 +4569,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#udunits;4.5.5->joda-time#joda-time;2.2 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#udunits;4.5.5->joda-time#joda-time;2.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#udunits;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving net.jcip#jcip-annotations;1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.jcip#jcip-annotations;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.jcip#jcip-annotations;1.0[0m
-[0m[[0mdebug[0m] [0m	found net.jcip#jcip-annotations;1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#udunits;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#udunits;4.5.5->net.jcip#jcip-annotations;1.0 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#udunits;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->edu.ucar#udunits;4.5.5 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->edu.ucar#udunits;4.5.5 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#udunits;4.5.5->joda-time#joda-time;2.2 [runtime->runtime(*)][0m
@@ -4616,6 +4680,8 @@
 [0m[[0mdebug[0m] [0m	found c3p0#c3p0;0.9.1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->c3p0#c3p0;0.9.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.6.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.6.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->org.quartz-scheduler#quartz;2.2.0 [compile->runtime(*)][0m
@@ -4634,6 +4700,8 @@
 [0m[[0mdebug[0m] [0m	found net.sf.ehcache#ehcache-core;2.6.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->net.sf.ehcache#ehcache-core;2.6.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.6.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->net.sf.ehcache#ehcache-core;2.6.2 [compile->runtime(*)][0m
@@ -4752,35 +4820,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#grib;4.5.5->org.itadaki#bzip2;0.9.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#grib;4.5.5->org.itadaki#bzip2;0.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#grib;4.5.5 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving edu.ucar#netcdf4;4.5.5 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: edu.ucar#netcdf4;4.5.5 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: edu.ucar#netcdf4;4.5.5[0m
-[0m[[0mdebug[0m] [0m	found edu.ucar#netcdf4;4.5.5 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving net.java.dev.jna#jna;4.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java.dev.jna#jna;4.1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java.dev.jna#jna;4.1.0[0m
-[0m[[0mdebug[0m] [0m	found net.java.dev.jna#jna;4.1.0 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.msgpack#msgpack-scala_2.10;0.6.11 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.msgpack#msgpack-scala_2.10;0.6.11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.msgpack#msgpack-scala_2.10;0.6.11 {provided=[default(compile)]}[0m
@@ -4978,6 +5017,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.apache.spark#spark-core_2.10;1.6.0 [provided->default(compile)][0m
@@ -8747,6 +8802,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->c3p0#c3p0;0.9.1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->c3p0#c3p0;0.9.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.6.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.6.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
@@ -8754,6 +8811,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->net.sf.ehcache#ehcache-core;2.6.2 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->net.sf.ehcache#ehcache-core;2.6.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.6.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->com.google.guava#guava;17.0 [compile->master(compile)][0m
@@ -8864,25 +8923,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#grib;4.5.5->org.itadaki#bzip2;0.9.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#grib;4.5.5->org.itadaki#bzip2;0.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#grib;4.5.5 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.msgpack#msgpack-scala_2.10;0.6.11 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.msgpack#msgpack-scala_2.10;0.6.11 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.msgpack#msgpack-scala_2.10;0.6.11 [provided->compile][0m
@@ -9011,6 +9051,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [test-internal][0m
@@ -9025,6 +9081,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->log4j#log4j;1.2.14 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ncspark_2.10;0.0.1 [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.apache.spark#spark-core_2.10;1.6.0 [provided->default(compile)][0m
@@ -12738,6 +12810,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->c3p0#c3p0;0.9.1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->c3p0#c3p0;0.9.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.6.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.6.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.quartz-scheduler#quartz;2.2.0->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
@@ -12745,6 +12819,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->net.sf.ehcache#ehcache-core;2.6.2 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->net.sf.ehcache#ehcache-core;2.6.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.6.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.2->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#cdm;4.5.5->com.google.guava#guava;17.0 [compile->master(compile)][0m
@@ -12855,25 +12931,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#grib;4.5.5->org.itadaki#bzip2;0.9.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#grib;4.5.5->org.itadaki#bzip2;0.9.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#grib;4.5.5 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.jcip#jcip-annotations;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies edu.ucar#netcdf4;4.5.5->org.slf4j#slf4j-api;1.7.10 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->edu.ucar#netcdf4;4.5.5 [provided->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.msgpack#msgpack-scala_2.10;0.6.11 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.msgpack#msgpack-scala_2.10;0.6.11 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ncspark_2.10;0.0.1->org.msgpack#msgpack-scala_2.10;0.6.11 [provided->compile][0m
@@ -13049,13 +13106,16 @@
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] log4j#log4j;1.2.14!log4j.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] edu.ucar#netcdf4;4.5.5!netcdf4.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.jcip#jcip-annotations;1.0!jcip-annotations.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jna#jna;4.1.0!jna.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.7!slf4j-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-core_2.10;1.6.0!spark-core_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-mllib_2.10;1.6.0!spark-mllib_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.hadoop#hadoop-client;2.6.0!hadoop-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-compress;1.6!commons-compress.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] edu.ucar#cdm;4.5.5!cdm.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] edu.ucar#grib;4.5.5!grib.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] edu.ucar#netcdf4;4.5.5!netcdf4.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.msgpack#msgpack-scala_2.10;0.6.11!msgpack-scala_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalanlp#breeze-viz_2.10;0.11.2!breeze-viz_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.avro#avro-mapred;1.7.7!avro-mapred.jar[0m
@@ -13227,7 +13287,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.2.5!httpcore.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] joda-time#joda-time;2.2!joda-time.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jdom#jdom2;2.0.4!jdom2.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.jcip#jcip-annotations;1.0!jcip-annotations.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.quartz-scheduler#quartz;2.2.0!quartz.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sf.ehcache#ehcache-core;2.6.2!ehcache-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;17.0!guava.jar(bundle)[0m
@@ -13238,7 +13297,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] c3p0#c3p0;0.9.1.1!c3p0.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jsoup#jsoup;1.7.2!jsoup.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] edu.ucar#jj2000;5.2!jj2000.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jna#jna;4.1.0!jna.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.msgpack#msgpack;0.6.11!msgpack.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scalap;2.10.4!scalap.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.googlecode.json-simple#json-simple;1.1.1!json-simple.jar(bundle)[0m
@@ -13256,7 +13314,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.xml.bind#jsr173_api;1.0!jsr173_api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4542ms :: artifacts dl 81ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4895ms :: artifacts dl 76ms[0m
 [0m[[0mdebug[0m] [0m	report for default#ncspark_2.10;0.0.1 compile produced in /Users/jialin/Documents/sparkhdf5/ncSpark/target/resolution-cache/reports/default-ncspark_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ncspark_2.10;0.0.1 runtime produced in /Users/jialin/Documents/sparkhdf5/ncSpark/target/resolution-cache/reports/default-ncspark_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ncspark_2.10;0.0.1 test produced in /Users/jialin/Documents/sparkhdf5/ncSpark/target/resolution-cache/reports/default-ncspark_2.10-test.xml[0m
@@ -13270,5 +13328,5 @@
 [0m[[0mdebug[0m] [0m	report for default#ncspark_2.10;0.0.1 docs produced in /Users/jialin/Documents/sparkhdf5/ncSpark/target/resolution-cache/reports/default-ncspark_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ncspark_2.10;0.0.1 pom produced in /Users/jialin/Documents/sparkhdf5/ncSpark/target/resolution-cache/reports/default-ncspark_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ncspark_2.10;0.0.1 scala-tool produced in /Users/jialin/Documents/sparkhdf5/ncSpark/target/resolution-cache/reports/default-ncspark_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4542ms resolve - 81ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (4895ms resolve - 76ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -7,8 +7,54 @@
 		revision="0.0.1"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160121163636"/>
+		date="20160121164143"/>
 	<dependencies>
+		<module organisation="edu.ucar" name="netcdf4">
+			<revision name="4.5.5" status="release" pubdate="20150310155803" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<metadata-artifact status="no" details="" size="26003" time="0" location="/Users/jialin/.ivy2/cache/edu.ucar/netcdf4/ivy-4.5.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/edu/ucar/netcdf4/4.5.5/netcdf4-4.5.5.pom"/>
+				<caller organisation="default" name="ncspark_2.10" conf="compile, runtime" rev="4.5.5" rev-constraint-default="4.5.5" rev-constraint-dynamic="4.5.5" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="netcdf4" type="jar" ext="jar" status="no" details="" size="62094" time="0" location="/Users/jialin/.ivy2/cache/edu.ucar/netcdf4/jars/netcdf4-4.5.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/ucar/netcdf4/4.5.5/netcdf4-4.5.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404041248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<metadata-artifact status="no" details="" size="4573" time="0" location="/Users/jialin/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="edu.ucar" name="netcdf4" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="4.5.5"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="/Users/jialin/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jna" name="jna">
+			<revision name="4.1.0" status="release" pubdate="20140306075605" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
+				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2408" time="0" location="/Users/jialin/.ivy2/cache/net.java.dev.jna/jna/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom"/>
+				<caller organisation="edu.ucar" name="netcdf4" conf="default, compile, runtime, master" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="4.5.5"/>
+				<artifacts>
+					<artifact name="jna" type="jar" ext="jar" status="no" details="" size="914597" time="0" location="/Users/jialin/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.jcip" name="jcip-annotations">
+			<revision name="1.0" status="release" pubdate="20080813234805" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcip.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<metadata-artifact status="no" details="" size="2215" time="0" location="/Users/jialin/.ivy2/cache/net.jcip/jcip-annotations/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.pom"/>
+				<caller organisation="edu.ucar" name="netcdf4" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="4.5.5"/>
+				<artifacts>
+					<artifact name="jcip-annotations" type="jar" ext="jar" status="no" details="" size="2254" time="0" location="/Users/jialin/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="log4j" name="log4j">
 			<revision name="1.2.14" status="release" pubdate="20080831044502" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/docs/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
