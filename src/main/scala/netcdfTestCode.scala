@@ -36,7 +36,7 @@ object netCDFTest extends Logging {
   }
 
   def appMain(sc: SparkContext, args: Array[String]) = {
-    val inpath = "/Users/jialin/Documents/sparkhdf5/ncSpark/src/main/resources/merg_2006091100_4km-pixel.nc"
+    val inpath = "./src/main/resources/merg_2006091100_4km-pixel.nc"
     val outpath  = "output.nc"
     val outpath1 = "output1.nc"
     // Load using NetCDF binding
