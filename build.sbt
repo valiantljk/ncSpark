@@ -1,18 +1,31 @@
 version := "0.0.1"
 scalaVersion := "2.10.4"
 resolvers += "Unidata maven repository" at "http://artifacts.unidata.ucar.edu/content/repositories/unidata-releases"
+//
+//
 libraryDependencies ++= Seq(
+<<<<<<< HEAD
   "org.apache.spark" %% "spark-core" % "1.6.0",
   "org.apache.spark" %% "spark-mllib" % "1.6.0",
   "com.github.fommil.netlib" % "all" % "1.1.2",
+=======
+  "org.apache.spark" %% "spark-core" % "1.6.0" ,
+  "org.apache.spark" %% "spark-mllib" % "1.6.0",
+  "com.github.fommil.netlib" % "all" % "1.1.2" ,
+>>>>>>> 434f5fe398a32ca399fa5784cfd1c7e88e9a5cff
   "org.apache.hadoop" % "hadoop-client" % "2.6.0", // depends on the version of Hadoop you're using! use hadoop version command to determine
   "org.apache.commons" % "commons-compress" % "1.6",
   "log4j" % "log4j" % "1.2.14",
   "edu.ucar" % "cdm" % "4.5.5"  exclude("commons-logging", "commons-logging"),
   "edu.ucar" % "grib" % "4.5.5"  exclude("commons-logging", "commons-logging"),
   "edu.ucar" % "netcdf4" % "4.5.5" exclude("commons-logging", "commons-logging"),
+<<<<<<< HEAD
   "org.msgpack" %% "msgpack-scala" % "0.6.11",
   "org.scalanlp" %% "breeze" % "0.10",
+=======
+  "org.msgpack" %% "msgpack-scala" % "0.6.11"  ,
+  "org.scalanlp" %% "breeze" % "0.10"  ,
+>>>>>>> 434f5fe398a32ca399fa5784cfd1c7e88e9a5cff
   "org.scalanlp" %% "breeze-viz" % "0.11.2"
 )
 mainClass in (Compile, run) := Some("org.apache.spark.mllib.linalg.distributed.netCDFTest")
