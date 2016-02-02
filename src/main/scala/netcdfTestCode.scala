@@ -79,6 +79,14 @@ object netCDFTest extends Logging {
     //val temperature = outfile.addVariable(null, "temperature", DataType.FLOAT, threeDims);
 
     outfile.create
+    // memory info
+    val mb = 1024*1024
+    val runtime = Runtime.getRuntime
+    logInfo("before write first file, memory usage (MB)")
+    logInfo("** Used Memory:  " + (runtime.totalMemory - runtime.freeMemory) / mb)
+    logInfo("** Free Memory:  " + runtime.freeMemory / mb)
+    logInfo("** Total Memory: " + runtime.totalMemory / mb)
+    logInfo("** Max Memory:   " + runtime.maxMemory / mb)
 
     // breeze stores matrices in column-major, netcdf expects matrices in row-major format
     var dataarray = netcdfArray.factory(DataType.FLOAT, Array(rows, cols), results._3.t.data)
@@ -89,10 +97,17 @@ object netCDFTest extends Logging {
     logInfo("results._3.t.data data type:"+gettype(results._3.t.data))
     outfile.write(cloudcover, dataarray)
     outfile.close
-    rows=1024*200
+    logInfo("after write first file, before write second memory, , memory usage (MB)")
+    logInfo("** Used Memory:  " + (runtime.totalMemory - runtime.freeMemory) / mb)
+    logInfo("** Free Memory:  " + runtime.freeMemory / mb)
+    logInfo("** Total Memory: " + runtime.totalMemory / mb)
+    logInfo("** Max Memory:   " + runtime.maxMemory / mb)
+    rows=1024*1400
     cols=1024
+    logInfo("rows: "+rows+" cols: "+cols)
     val outlarge = NetcdfFileWriter.createNew(NetcdfFileWriter.Version.netcdf3,outpath1,null)
-    val latDimlarge= outlarge.addDimension(null,"lat",rows)
+    //val latDimlarge= outlarge.addDimension(null,"lat",rows)
+    val latDimlarge = outlarge.addUnlimitedDimension("lat")
     val lonDimlarge= outlarge.addDimension(null,"lon",cols)
     val twoDimslarge= ArrayBuffer(latDimlarge,lonDimlarge)
 
@@ -104,6 +119,11 @@ object netCDFTest extends Logging {
     val dataarraylarge=netcdfArray.factory(DataType.INT,Array(rows,cols),resultlarge)
     outlarge.write(largecloud,dataarraylarge)
     outlarge.close
+    logInfo("after write second file, , memory usage (MB)")
+    logInfo("** Used Memory:  " + (runtime.totalMemory - runtime.freeMemory) / mb)
+    logInfo("** Free Memory:  " + runtime.freeMemory / mb)
+    logInfo("** Total Memory: " + runtime.totalMemory / mb)
+    logInfo("** Max Memory:   " + runtime.maxMemory / mb)
     sc.stop()
   }
   def gettype[T](v: T)(implicit ev: ClassTag[T]) = ev.toString
