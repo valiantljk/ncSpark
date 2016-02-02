@@ -36,7 +36,8 @@ object netCDFTest extends Logging {
   }
 
   def appMain(sc: SparkContext, args: Array[String]) = {
-    val inpath = "/Users/jialin/Documents/sparkhdf5/ncSpark/src/main/resources/merg_2006091100_4km-pixel.nc"
+    //val inpath = "/Users/jialin/Documents/sparkhdf5/ncSpark/src/main/resources/merg_2006091100_4km-pixel.nc"
+    val inpath = "./src/main/resources/merg_2006091100_4km-pixel.nc"
     val outpath  = "output.nc"
     val outpath1 = "output1.nc"
     // Load using NetCDF binding
@@ -84,13 +85,15 @@ object netCDFTest extends Logging {
     var dataarray = netcdfArray.factory(DataType.FLOAT, Array(rows, cols), results._3.t.data)
     //writeClimate3DToNetCDF(outfile, temperature, results2._5, threeDims)
     logInfo("results data type: "+gettype(results))
-    logInfo("results._3 data type: "+gettype(results._3))
-    logInfo("results._3.t data type: "+gettype(results._3.t))
-    logInfo("results._3.t.data data type:"+gettype(results._3.t.data))
+    //logInfo("results._3 data type: "+gettype(results._3))
+    //logInfo("results._3.t data type: "+gettype(results._3.t))
+    //logInfo("results._3.t.data data type:"+gettype(results._3.t.data))
+    logInfo("write the array into output as cloudcover")
     outfile.write(cloudcover, dataarray)
     outfile.close
     rows=1024*200
     cols=1024
+    logInfo("generate new array with rows:"+rows+"cols: "+cols)
     val outlarge = NetcdfFileWriter.createNew(NetcdfFileWriter.Version.netcdf3,outpath1,null)
     val latDimlarge= outlarge.addDimension(null,"lat",rows)
     val lonDimlarge= outlarge.addDimension(null,"lon",cols)
@@ -99,6 +102,7 @@ object netCDFTest extends Logging {
     val largecloud=outlarge.addVariable(null,"largecloud",DataType.INT,twoDimslarge)
     outlarge.create
     //generate large random 2d array
+    logInfo("produce random numbers in the large array")
     val resultlarge=random2dArray(rows,cols,10000)
     logInfo("resultlarge data type: "+ gettype(resultlarge))
     val dataarraylarge=netcdfArray.factory(DataType.INT,Array(rows,cols),resultlarge)
